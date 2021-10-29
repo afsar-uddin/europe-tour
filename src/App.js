@@ -3,11 +3,11 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
-import MyOrders from './Components/MyOrders/MyOrders';
+import MyTrips from './Components/MyTrips/MyTrips';
 import NoteFound from './Components/NoteFound/NoteFound';
 import Contact from './Components/Contact/Contact';
-import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
-import AddANewOrder from './Components/AddANewOrder/AddANewOrder';
+import ManageAllTrips from './Components/ManageAllTrips/ManageAllTrips';
+import AddANewTrip from './Components/AddANewTrip/AddANewTrip';
 import Login from './Components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import Footer from './Components/Footer/Footer';
@@ -30,20 +30,20 @@ function App() {
             <Home></Home>
           </Route>
 
-          <Route path="/myorders">
-            <MyOrders></MyOrders>
+          <Route path="/MyTrips">
+            <MyTrips></MyTrips>
           </Route>
 
           <Route path="/contact">
             <Contact></Contact>
           </Route>
 
-          <Route path="/manage-all-orders">
-            <ManageAllOrders></ManageAllOrders>
+          <Route path="/manage-all-trips">
+            <ManageAllTrips></ManageAllTrips>
           </Route>
 
-          <Route path="/add-new-service">
-            <AddANewOrder></AddANewOrder>
+          <Route path="/add-new-trip">
+            <AddANewTrip></AddANewTrip>
           </Route>
 
           <Route path="/login">

@@ -1,0 +1,28 @@
+
+.add-new-trip {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.add-new-trip form {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.add-new-trip form input, .add-new-trip form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.add-new-trip form input:focus-within, .add-new-trip form textarea:focus-within {
+    outline: none;
+    border-color: #A7161B;
+}

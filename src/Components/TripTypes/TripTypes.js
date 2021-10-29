@@ -24,7 +24,7 @@ const TripTypes = () => {
                 {
                     trips.map(trip => <Col>
                         <div className="single-trip">
-                            <img src={trip.cover} />
+                            <img src={trip?.cover} alt={trip.tripName} />
                             <div className="trip-info">
                                 <h3>{trip.tripName}</h3>
                                 <p>{trip.shortDsc}</p>

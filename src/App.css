@@ -45,3 +45,13 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+.inner-page-header h2 {
+  background-color: #d31c22;
+  color: rgb(136, 133, 133);
+  text-align: center;
+  padding: 40px 15px;
+  display: block;
+  margin-bottom: 45px;
+  color: #fff;
+  text-transform: uppercase;
+}
