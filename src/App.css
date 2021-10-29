@@ -24,3 +24,24 @@ a {
   background-color: #d31c22;
   color: #fff;
 }
+/* section title */
+.sec-title {
+  text-align: center;
+  margin: 45px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.sec-title h2 {
+  position: relative;
+  display: inline-block;
+}
+.sec-title h2:after {
+  position: absolute;
+  bottom: -10px;
+  width: 70%;
+  background: #d31c22;
+  height: 5px;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+}
