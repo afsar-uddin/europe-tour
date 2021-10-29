@@ -22,7 +22,7 @@ const Header = () => {
                         {user?.email ? <NavLink activeClassName="active" exact to="/add-new-service">Add new service</NavLink> : ''}
                         <NavLink activeClassName="active" exact to="/contact">Contact</NavLink>
                         {user?.email ? <img src={user?.photoURL} alt="Profile Pic" /> : ''}
-                        {user?.email ? <button onClick={logOut}>Logout</button> : <NavLink activeClassName="active" exact to="/login">Login</NavLink>}
+                        {user?.email ? <button className="primary-btn" onClick={logOut}>Logout</button> : <NavLink activeClassName="active" exact to="/login">Login</NavLink>}
 
                     </Nav>
                 </Navbar.Collapse>

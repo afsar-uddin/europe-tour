@@ -9,3 +9,18 @@ a {
   text-decoration: none;
   color: #313131;
 }
+.primary-btn {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #A7161B;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.4s all;
+  display: inline-block;
+}
+.primary-btn:hover {
+  background-color: #d31c22;
+  color: #fff;
+}
