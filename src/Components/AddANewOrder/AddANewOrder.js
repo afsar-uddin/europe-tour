@@ -3,7 +3,7 @@ import React from 'react';
 const AddANewOrder = () => {
     return (
         <div>
-            AddANewOrder
+            AddANewOrder only loggedin user
         </div>
     );
 };

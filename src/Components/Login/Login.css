@@ -1,0 +1,17 @@
+.google-login {
+    text-align: center;
+    margin: 100px 0;
+}
+.google-login button img {
+    max-width: 90px;
+}
+.google-login button {
+    font-size: 28px;
+    border: none;
+    background-color: #A7161B;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 10px;
+}

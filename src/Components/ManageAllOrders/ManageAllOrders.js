@@ -3,7 +3,7 @@ import React from 'react';
 const ManageAllOrders = () => {
     return (
         <div>
-            Manage all orders...
+            Manage all orders only loggedin users
         </div>
     );
 };
