@@ -10,6 +10,10 @@ import ManageAllOrders from './Components/ManageAllOrders/ManageAllOrders';
 import AddANewOrder from './Components/AddANewOrder/AddANewOrder';
 import Login from './Components/Login/Login';
 import AuthProvider from './context/AuthProvider';
+import Footer from './Components/Footer/Footer';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import TripDetail from './Components/TripDetail/TripDetail';
+import TripConfirmation from './Components/TripConfirmation/TripConfirmation';
 
 function App() {
   return (
@@ -46,11 +50,21 @@ function App() {
             <Login></Login>
           </Route>
 
+          <PrivateRoute path="/trip-detail/:id">
+            <TripDetail></TripDetail>
+          </PrivateRoute>
+
+          <Route path="/trip-confirm">
+            <TripConfirmation></TripConfirmation>
+          </Route>
+
           <Route to="*">
             <NoteFound></NoteFound>
           </Route>
 
         </Switch>
+        <Footer></Footer>
+
       </Router>
     </AuthProvider>
   );

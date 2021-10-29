@@ -28,7 +28,7 @@ const TripTypes = () => {
                             <div className="trip-info">
                                 <h3>{trip.tripName}</h3>
                                 <p>{trip.shortDsc}</p>
-                                <Link className="primary-btn" to="/trip-detail">Proceed to book <span>&#8594;</span></Link>
+                                <Link className="primary-btn" to={`/trip-detail/${trip._id}`}>Proceed to book <span>&#8594;</span></Link>
                             </div>
                         </div>
                     </Col>)

@@ -1,9 +1,17 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <div>
-            footer bottom
+        <div className="footer">
+            <Container>
+                <Row>
+                    <Col>
+                        <p>All right reserved &copy; <span>Europe Tour</span></p>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 };

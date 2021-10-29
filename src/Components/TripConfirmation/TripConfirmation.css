@@ -1,0 +1,13 @@
+.trip-confirmation {
+    max-width: 600px;
+    margin: 80px auto;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.trip-confirmation h2 span {
+    color: #d31c22;
+    font-weight: 800;
+}
