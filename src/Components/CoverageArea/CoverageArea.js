@@ -19,7 +19,7 @@ const CoverageArea = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row md="4" className="justify-content-center">
+                <Row md={4} className="justify-content-center">
                     {
                         coverage.map(area => <Col
                             key={area._id}
