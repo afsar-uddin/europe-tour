@@ -19,7 +19,7 @@ const TripTypes = () => {
                     </div>
                 </Col>
             </Row>
-            <Row md={3} className="justify-content-center">
+            <Row lg={3} md={2} xs={1} className="justify-content-center">
 
                 {
                     trips.map(trip => <Col>

@@ -5,7 +5,7 @@ import './CoverageArea.css';
 const CoverageArea = () => {
     const [coverage, setCoverage] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/coverage-area')
+        fetch('https://limitless-shelf-54618.herokuapp.com/coverage-area')
             .then(res => res.json())
             .then(data => setCoverage(data))
     }, []);
@@ -19,7 +19,7 @@ const CoverageArea = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row md={4} className="justify-content-center">
+                <Row lg={4} md={3} xs={1} className="justify-content-center">
                     {
                         coverage.map(area => <Col
                             key={area._id}

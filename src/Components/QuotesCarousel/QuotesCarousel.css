@@ -26,3 +26,12 @@
 .coverage-area {
     margin-bottom: 45px;
 }
+@media screen and (max-width: 1050px) {
+    .carousel-quotes .carousel-caption {
+        right: 15%;
+    text-align: center;
+    width: 100%;
+    left: 15%;
+    top: auto;
+    }
+}

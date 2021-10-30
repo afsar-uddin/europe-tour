@@ -6,7 +6,7 @@ import './Banner.css';
 const Banner = () => {
     const [banner, setBanner] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/banner')
+        fetch('https://limitless-shelf-54618.herokuapp.com/banner')
             .then(res => res.json())
             .then(data => setBanner(data[0]))
     }, [])
