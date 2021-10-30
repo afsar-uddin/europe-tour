@@ -47,7 +47,11 @@ const MyTrips = () => {
                                     key={trip._id}
                                 > <Card>
                                         <img src={trip.cover} />
-                                        <button className="primary-btn" onClick={() => handleRemoveTrip(trip._id)}>Remove your trip <span>&#x2715;</span></button>
+                                        <h3>{trip.tripName}</h3>
+                                        <div className="btn-status">
+                                            <button className="primary-btn" onClick={() => handleRemoveTrip(trip._id)}>Remove <span>&#x2715;</span></button>
+                                            {trip.status ? <span>Status : {trip.status}</span> : ''}
+                                        </div>
                                     </Card></Col> : ''
 
                             )

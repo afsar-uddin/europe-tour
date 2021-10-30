@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Spinner } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const ManageAllTrips = () => {
@@ -47,7 +48,7 @@ const ManageAllTrips = () => {
                                 <h3>{trip.tripName}</h3>
                                 <div className="trip-card-footer">
                                     <button className="primary-btn" onClick={() => handleRemoveTrip(trip._id)}>Remove <span>&#x2715;</span></button>
-                                    <p>Status: <span>Pending</span></p>
+                                    <Link to={`/trip/update/${trip._id}`}><button className="primary-btn">Update status</button></Link>
                                 </div>
                             </Card></Col>)
                     }

@@ -14,6 +14,7 @@ import Footer from './Components/Footer/Footer';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import TripDetail from './Components/TripDetail/TripDetail';
 import TripConfirmation from './Components/TripConfirmation/TripConfirmation';
+import TripUpdate from './Components/ManageAllTrips/TripUpdate';
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
 
           <Route path="/manage-all-trips">
             <ManageAllTrips></ManageAllTrips>
+          </Route>
+
+          <Route path="/trip/update/:id">
+            <TripUpdate></TripUpdate>
           </Route>
 
           <Route path="/add-new-trip">

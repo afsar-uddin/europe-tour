@@ -7,8 +7,10 @@ import './TripDetail.css';
 
 const TripDetail = () => {
     const [tripDetail, setTripDetail] = useState({});
+    const [tripStatus, setTripStatus] = useState('pending');
     const { id } = useParams();
     const { user } = useAuth();
+    console.log(tripStatus)
 
     useEffect(() => {
         const url = `http://localhost:4000/trip-types/${id}`;
@@ -22,7 +24,8 @@ const TripDetail = () => {
         const tripName = tripDetail.tripName;
         const cover = tripDetail.cover;
         const email = user.email;
-        const orderTrip = { tripName, cover, email };
+        const status = tripStatus;
+        const orderTrip = { tripName, cover, email, status };
         fetch('http://localhost:4000/trips', {
             method: 'post',
             headers: {

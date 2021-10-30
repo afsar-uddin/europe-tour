@@ -14,9 +14,6 @@
     margin: 15px 0;
     text-align: center;
 }
-.trip-wrapper .card button {
-    padding: 15px 0;
-}
 .trip-wrapper .card img {
     height: 200px;
     width: 100%;
@@ -51,18 +48,28 @@
 .trip-wrapper .card .trip-card-footer button {
     padding: 7px 20px;
 }
-.trip-card-footer p {
-    margin: 0;
-    margin-right: 10px;
-}
-.trip-card-footer p span {
-    color: #A7161B;
-    font-weight: 600;
-}
 .not-found {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
     color: #d31c22;
     margin: 150px 0;
+}
+.btn-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}   
+.btn-status button {
+    padding: 5px 15px 5px 20px;
+}
+.trip-wrapper .card .btn-status button span {
+    opacity: 1;
+    right: 0;
+}
+.btn-status>span {
+    color: #A7161B;
+    padding-right: 10px;
+    font-weight: 600;
 }
