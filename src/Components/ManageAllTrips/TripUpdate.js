@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import './ManageAllTrips.css';
 
 const TripUpdate = () => {
     const [status, setStetus] = useState();
@@ -33,18 +34,20 @@ const TripUpdate = () => {
                     alert("updated successfully");
                     setStetus({})
                 }
-            })
+            });
+
+        window.location = '/mytrips';
         e.preventDefault();
     };
 
 
 
     return (
-        <div>
-            update your trip for {status?._id}
+        <div className="status-wrapper">
+            <div class="inner-page-header"><h2>Manage your trip status(Pending/Approved)</h2></div>
             <form onSubmit={handleUpadeStatus}>
                 <input type="text" onChange={handleStatusChange} placeholder="Update status" value={status?.status || ''} />
-                <input type="submit" value="Update" />
+                <input className="primary-btn" type="submit" value="Update" />
             </form>
         </div>
     );

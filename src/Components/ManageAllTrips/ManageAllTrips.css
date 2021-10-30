@@ -1,0 +1,18 @@
+.status-wrapper form {
+    max-width: 500px;
+    margin: 130px auto;
+    text-align: center;
+}
+.status-wrapper form input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+}
+.status-wrapper form  input.primary-btn {
+    border-radius: 0px 5px 5px 0px;
+    padding: 6px 15px;
+}
+.status-wrapper form input:focus-within {
+    border-color: #d31c22;
+}
