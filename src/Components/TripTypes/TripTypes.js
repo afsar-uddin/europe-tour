@@ -22,7 +22,9 @@ const TripTypes = () => {
             <Row lg={3} md={2} xs={1} className="justify-content-center">
 
                 {
-                    trips.map(trip => <Col>
+                    trips.map(trip => <Col
+                        key={trip._id}
+                    >
                         <div className="single-trip">
                             <img src={trip?.cover} alt={trip.tripName} />
                             <div className="trip-info">

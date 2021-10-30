@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Spinner } from 'react-bootstrap';
+import useAuth from '../../hooks/useAuth';
 
 const ManageAllTrips = () => {
+    const { isLoading } = useAuth();
     const [trips, setTrips] = useState([]);
     useEffect(() => {
         fetch('http://localhost:4000/trips')
@@ -24,7 +26,11 @@ const ManageAllTrips = () => {
                     };
                 })
         }
-    }
+    };
+
+    if (isLoading) {
+        return <div className="preloader"><Spinner animation="border" /></div>
+    };
 
     return (
         <div className="trip-wrapper">
@@ -32,7 +38,7 @@ const ManageAllTrips = () => {
                 <h2>Manage your all trips</h2>
             </div>
             <Container>
-                <Row md={3}>
+                <Row lg={3} md={2} xs={1}>
                     {
                         trips.map(trip => <Col
                             key={trip._id}
