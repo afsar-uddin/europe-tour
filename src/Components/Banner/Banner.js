@@ -5,7 +5,6 @@ import './Banner.css';
 
 const Banner = () => {
     const [banner, setBanner] = useState([]);
-    console.log(banner)
     useEffect(() => {
         fetch('http://localhost:4000/banner')
             .then(res => res.json())

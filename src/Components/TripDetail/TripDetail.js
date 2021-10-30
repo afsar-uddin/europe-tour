@@ -10,14 +10,31 @@ const TripDetail = () => {
     const { id } = useParams();
     const { user } = useAuth();
 
-    console.log(user)
-
     useEffect(() => {
         const url = `http://localhost:4000/trip-types/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTripDetail(data))
     }, []);
+
+    // POST TO DB
+    const proceedToTrip = () => {
+        const tripName = tripDetail.tripName;
+        const cover = tripDetail.cover;
+        const email = user.email;
+        const orderTrip = { tripName, cover, email };
+        fetch('http://localhost:4000/trips', {
+            method: 'post',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(orderTrip)
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result)
+            })
+    }
     return (
         <div className="trip-detail-wrapper">
             <div className="inner-page-header">
@@ -44,7 +61,9 @@ const TripDetail = () => {
                 </Row>
                 <Row className="trip-order">
                     <Col>
-                        <Link to="/trip-confirm" className="primary-btn">Confirm to book your seat</Link>
+                        <Link to="/trip-confirm" className="primary-btn">
+                            <button onClick={proceedToTrip}>Proceed to add your trip</button>
+                        </Link>
                     </Col>
                 </Row>
             </Container>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './TripConfirmation.css'
 
@@ -7,7 +8,7 @@ const TripConfirmation = () => {
     return (
         <div className="trip-confirmation">
             <h2>Congratulations <span>{user?.displayName}</span> ! </h2>
-            <p>Your trip confirmed, One of our support memeber contact with you soon.</p>
+            <p>Your trip is confirmed. See your  <Link to="/mytrips">all trips</Link> </p>
         </div>
     );
 };

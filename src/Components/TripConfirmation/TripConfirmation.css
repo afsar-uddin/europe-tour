@@ -11,3 +11,8 @@
     color: #d31c22;
     font-weight: 800;
 }
+.trip-confirmation p a {
+    color: #d31c22;
+    font-weight: 600;
+    border-bottom: 4px solid #d31c22;
+}
