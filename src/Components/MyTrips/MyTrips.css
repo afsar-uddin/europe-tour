@@ -1,3 +1,7 @@
+.trip-wrapper {
+    min-height: 100vh;
+    margin-bottom: 30px;
+}
 .trip-wrapper .card h3 {
     font-size: 22px;
     text-transform: uppercase;
@@ -20,9 +24,6 @@
 .trip-wrapper .col {
     margin-bottom: 30px;
 }
-.trip-wrapper {
-    margin-bottom: 30px;
-}
 .trip-wrapper .card button span {
     transition: 0.2s;
     opacity: 0;
@@ -32,4 +33,36 @@
 .trip-wrapper .card button:hover span {
     opacity: 1;
     right: -5px;
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-footer button, .card-footer a {
+    padding: 0;
+}
+.trip-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trip-wrapper .card .trip-card-footer button {
+    padding: 7px 20px;
+}
+.trip-card-footer p {
+    margin: 0;
+    margin-right: 10px;
+}
+.trip-card-footer p span {
+    color: #A7161B;
+    font-weight: 600;
+}
+.not-found {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #d31c22;
+    margin: 150px 0;
 }

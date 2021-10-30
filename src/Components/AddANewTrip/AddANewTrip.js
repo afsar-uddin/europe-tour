@@ -41,7 +41,7 @@ const AddANewTrip = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className="add-new-trip">
+                        <div className="add-new-trip trip-form">
                             <form onSubmit={handleAddTrip}>
                                 <input type="text" ref={tripNameRef} placeholder="Trip name" required />
                                 <input type="text" ref={tripShortRef} placeholder="Trip short info" required />

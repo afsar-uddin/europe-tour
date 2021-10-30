@@ -10,7 +10,7 @@ const useFirebase = () => {
     // loanding handling
     const [isLoading, setIsLoading] = useState(true);
     // loging handle 
-    const [isLogin, setIsLogin] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
 
     // login with google
     const googleLogin = () => {
