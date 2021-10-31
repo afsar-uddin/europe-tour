@@ -6,7 +6,7 @@ import './TripTypes.css'
 const TripTypes = () => {
     const [trips, setTrips] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/trip-types')
+        fetch('https://limitless-shelf-54618.herokuapp.com/trip-types')
             .then(res => res.json())
             .then(data => setTrips(data))
     }, []);

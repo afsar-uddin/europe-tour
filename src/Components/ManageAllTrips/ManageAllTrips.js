@@ -7,14 +7,14 @@ const ManageAllTrips = () => {
     const { isLoading } = useAuth();
     const [trips, setTrips] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/trips')
+        fetch('https://limitless-shelf-54618.herokuapp.com/trips')
             .then(res => res.json())
             .then(data => setTrips(data))
     }, []);
     const handleRemoveTrip = id => {
-        const proceed = window.confirm("Are you sure delete the user");
+        const proceed = window.confirm("Are you sure delete the trip?");
         if (proceed) {
-            const url = `http://localhost:4000/trips/${id}`;
+            const url = `https://limitless-shelf-54618.herokuapp.com/trips/${id}`;
             fetch(url, {
                 method: 'delete',
             })
@@ -46,10 +46,11 @@ const ManageAllTrips = () => {
                         ><Card>
                                 <img src={trip.cover} />
                                 <h3>{trip.tripName}</h3>
-                                <div className="trip-card-footer">
+                                <div className="btn-status">
                                     <button className="primary-btn" onClick={() => handleRemoveTrip(trip._id)}>Remove <span>&#x2715;</span></button>
-                                    <Link to={`/trip/update/${trip._id}`}><button className="primary-btn">Update status</button></Link>
+                                    <span>Status: {trip.status}</span>
                                 </div>
+                                <Link to={`/trip/update/${trip._id}`}><button className="primary-btn">Update status</button></Link>
                             </Card></Col>)
                     }
                 </Row>

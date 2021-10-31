@@ -7,15 +7,15 @@ const MyTrips = () => {
     const { user, isLoading } = useAuth();
     const [trips, setTrips] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/trips')
+        fetch('https://limitless-shelf-54618.herokuapp.com/trips/')
             .then(res => res.json())
             .then(data => setTrips(data))
     }, []);
 
     const handleRemoveTrip = id => {
-        const proceed = window.confirm("Are you sure delete the user");
+        const proceed = window.confirm("Are you sure delete the trip?");
         if (proceed) {
-            const url = `http://localhost:4000/trips/${id}`;
+            const url = `https://limitless-shelf-54618.herokuapp.com/trips/${id}`;
             fetch(url, {
                 method: 'delete',
             })

@@ -17,7 +17,7 @@ const AddANewTrip = () => {
         const detail = tripDetailRef.current.value;
         const newTrip = { tripName, shortDsc, cover, detail };
 
-        fetch('http://localhost:4000/trip-types/', {
+        fetch('https://limitless-shelf-54618.herokuapp.com/trip-types/', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

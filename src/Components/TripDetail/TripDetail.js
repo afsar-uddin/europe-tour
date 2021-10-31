@@ -13,7 +13,7 @@ const TripDetail = () => {
     console.log(tripStatus)
 
     useEffect(() => {
-        const url = `http://localhost:4000/trip-types/${id}`;
+        const url = `https://limitless-shelf-54618.herokuapp.com/trip-types/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTripDetail(data))
@@ -26,7 +26,7 @@ const TripDetail = () => {
         const email = user.email;
         const status = tripStatus;
         const orderTrip = { tripName, cover, email, status };
-        fetch('http://localhost:4000/trips', {
+        fetch('https://limitless-shelf-54618.herokuapp.com/trips', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

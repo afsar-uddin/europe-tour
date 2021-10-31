@@ -5,7 +5,7 @@ import './QuotesCarousel.css';
 const QuotesCarousel = () => {
     const [quotes, setQuotes] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/quotes')
+        fetch('https://limitless-shelf-54618.herokuapp.com/quotes')
             .then(res => res.json())
             .then(data => setQuotes(data))
     }, []);
