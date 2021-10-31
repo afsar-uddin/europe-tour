@@ -33,10 +33,10 @@ const TripUpdate = () => {
                 if (data.modifiedCount > 0) {
                     alert("updated successfully");
                     setStetus({})
+                    window.location = '/manage-all-trips';
                 }
             });
 
-        window.location = '/manage-all-trips';
         e.preventDefault();
     };
 
