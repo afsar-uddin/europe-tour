@@ -21,6 +21,7 @@
     background-color: #A7161B;
     border: none;
     color: #fff;
+    border-radius: 5px;
 }
 .trip-detail h4 {
     margin: 30px 0;

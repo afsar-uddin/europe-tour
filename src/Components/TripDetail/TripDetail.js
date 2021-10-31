@@ -10,7 +10,7 @@ const TripDetail = () => {
     const [tripStatus, setTripStatus] = useState('pending');
     const { id } = useParams();
     const { user } = useAuth();
-    console.log(tripStatus)
+
 
     useEffect(() => {
         const url = `https://limitless-shelf-54618.herokuapp.com/trip-types/${id}`;
@@ -35,7 +35,7 @@ const TripDetail = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result)
+                // console.log(result)
             })
     }
     return (

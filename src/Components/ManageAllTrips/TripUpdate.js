@@ -5,7 +5,6 @@ import './ManageAllTrips.css';
 const TripUpdate = () => {
     const [status, setStetus] = useState({});
     const { id } = useParams();
-    console.log(status)
 
     useEffect(() => {
         const url = `https://limitless-shelf-54618.herokuapp.com/trips/${id}`;
