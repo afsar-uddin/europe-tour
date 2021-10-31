@@ -7,6 +7,9 @@ This project based on React JS, React Bootstrap and MongoDB. It's a complete app
 ### Table of content
 ### Home
     * Responsive Header nav with logo (credit: logomaker.com),
+    * By default three page will appear without login like Home, Contact and Login,
+    * After login a user with google other fully functional page will appear, 
+    * User can book trip, all booked trip will add into My Trip page, Also will it Manage all trips page and here user can remove trip or update pending status as approved
     * Animated Banner with contact page link
     * Trip types with trip booking functionality
     * Our coverage area (like: USA, Canada, Australia, Russia etc)
@@ -20,4 +23,13 @@ This project based on React JS, React Bootstrap and MongoDB. It's a complete app
 
 ### Manage All trips
     * In this page each trip has remove button as well as update status,
-    
+    * On click remove button the particular trip will remove from client site as well server site too with a warning popup. 
+    * Update status button, update the project status like default pending, and admin can make it as approved.
+
+### Add New Trip
+    * In this page user can add new trip by fullfilled the following field: Trip name, Trip short info, Trip related image url and trip description. 
+    * Each created trip will hit add the home page with pre-added trip-types. 
+    * New created trip access for all users, and anyone can add to their trip and will get all functionality like pre-added trip-types. 
+
+### Contact
+    * By this page user can contact with site owner using name, email and his/her comments 
