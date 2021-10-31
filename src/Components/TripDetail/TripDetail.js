@@ -44,7 +44,7 @@ const TripDetail = () => {
                 <h2>Trip Detail and User Shorpt Information</h2>
             </div>
             <Container>
-                <Row md={2}>
+                <Row md={2} xs={1}>
                     <Col>
                         <div className="trip-detail">
                             <h3>{tripDetail.tripName}</h3>

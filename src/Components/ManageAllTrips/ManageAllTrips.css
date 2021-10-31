@@ -24,3 +24,18 @@
     margin-top: 15px;
     padding: 10px 5px;
 }
+@media screen and (max-width: 720px) {
+    .status-wrapper form {
+        margin: 40px 15px;
+    }
+    .status-wrapper form input {
+        width: 100%;
+        text-align: center;
+    }
+    .status-wrapper form input.primary-btn {
+        width: auto;
+        margin-top: 15px;
+        border-radius: 5px;
+        padding: 10px 40px;
+    }
+}

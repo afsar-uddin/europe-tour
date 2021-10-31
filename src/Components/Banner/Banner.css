@@ -34,7 +34,14 @@
 .banner-caption h2, .banner-caption p {
     margin-bottom: 20px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
+    .banner-caption p {
+        display: none;
+    }
+    .banner-caption h2 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
     .banner-caption .primary-btn {
         padding: 9px;
         font-size: 14px;
@@ -47,12 +54,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .banner-caption h2, .banner-caption p {
-        margin-bottom: 5px;
-    }
-    .banner-caption h2 {
-        font-size: 18px;
     }
     .banner-caption p {
         font-size: 14px;
