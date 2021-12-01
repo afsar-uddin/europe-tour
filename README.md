@@ -2,6 +2,10 @@
 
 ## Project Client side [Live](https://europe-tour-explore.web.app/) Link || Project Server side [Repo](https://github.com/afsar-uddin/europe-tour-server) Link
 
+### Core Functionality
+* Registration and Login system implemented and Register user can create trip and update
+* Admin can manage all orders, create trips, cancel trips, manage order status too. 
+* Used ReactJS, React-Bootstrap, MongoDB, ExpressJS, API,  Firebase Authentication, dashboard.
 
 This project based on React JS, React Bootstrap and MongoDB. It's a complete application for booking vrious tour trip around the world. It has also core functionality for booking trips, add new trip, my trip, manage all trips and status. 
 
